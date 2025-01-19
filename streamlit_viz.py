@@ -43,7 +43,7 @@ for _, row in df.iterrows():
         fill_color=color,
         fill_opacity=0.7,
         # popup=f"Address: {row['Full_Address']}<br /> Rent Increase: {row['Percent_Increase']}%",
-        tooltip=f"Address: {row['Full_Address']} <br /> Rent Before: {row['Rental price (per month) BEFORE the increase']} <br />  Rent After: {row['Rental price (per month) AFTER the increase']} <br /> Increase: {row['Percent_Increase']}%",
+        tooltip=f"Address: {row['Full_Address']} <br /> Rent Before: {row['Rental price (per month) BEFORE the increase']} <br />  Rent After: {row['Rental price (per month) AFTER the increase']} <br /> Rent Increase: {row['Percent_Increase']}%",
     ).add_to(m)
 
 st_folium(m, width=700, height=500)
