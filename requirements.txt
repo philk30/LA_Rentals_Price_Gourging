@@ -1,5 +1,5 @@
 streamlit
 pandas
 folium
-st_folium
-LinearColormap
+streamlit_folium
+branca.colormap
