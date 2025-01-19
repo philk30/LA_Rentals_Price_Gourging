@@ -9,17 +9,17 @@ from branca.colormap import LinearColormap
 df = pd.read_csv("Visualization_File.csv")
 
 
-st.title("Home Rental Price Increase with Locations")
+st.title("Home Rental Price Increase after LA Fires")
 st.write(
     "This map shows the rental price increases for homes. "
     "Hover over a marker to see the address and percentage increase."
     "This was built using data collected by @bad_tenant."
-    "Here is the link to the OG spreadsheet."
+    "Here is the link to the OG spreadsheet - https://docs.google.com/spreadsheets/d/1RXWxLqTyWvAuq8A0PgaBuWeEn_G6qTLyTZ8lzfNEaNw/edit?gid=314416722#gid=314416722"
 )
 
 
 m = folium.Map(location=[df["Latitude"].mean(),
-               df["Longitude"].mean()], zoom_start=5)
+               df["Longitude"].mean()], zoom_start=7.5)
 
 
 colormap = LinearColormap(
